@@ -9,8 +9,12 @@
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.valb3r.ij20213bugwitheditortextfield.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.valb3r.ij20213bugwitheditortextfield.services.MyProjectService"/>
+        <toolWindow
+                id="BPMN-Flowable-Diagram"
+                secondary="true"
+                anchor="right"
+                factoryClass="com.github.valb3r.ij20213bugwitheditortextfield.AToolWindowFactory"/>
     </extensions>
-
     <applicationListeners>
         <listener class="com.github.valb3r.ij20213bugwitheditortextfield.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
